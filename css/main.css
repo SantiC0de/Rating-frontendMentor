@@ -1,0 +1,154 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+body{
+    background-color: var(--VeryDarkBlue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Overpass', sans-serif;
+}
+
+/*
+=========================
+DEFAULT RATING CARD
+=========================
+*/
+
+.main-title{
+    color: var(--White);
+}
+
+.main-paragraph{
+    color: var(--LightGrey);
+}
+
+.main-container__interactive{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 .5rem 1.3rem 0;
+
+}
+
+.btn-rating{
+    border: none;
+    background-color:hsl(214, 10%, 27%);
+    color: var(--LightGrey);
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    padding: 1rem;
+    font-size: 1rem;
+    
+}
+
+.btn-rating:hover{
+    background-color: var(--LightGrey);
+    color: var(--White);
+}
+
+.btn-rating:focus{
+    background-color: var(--Orange);
+    color: var(--White);
+    transition: .5s ease;
+}
+
+.btn-submit{
+    background-color: var(--Orange);
+    padding: .6rem;
+    width: 80%;
+    border: none;
+    border-radius: 1rem;
+    color: var(--White);
+    font-size: 1rem;
+    margin:0 0 1rem 2rem;
+
+}
+
+.main-img{
+    background-color: hsl(214, 10%, 27%);
+    padding: .5rem;
+    border-radius: 1rem;
+}
+
+
+/*
+======================
+DEFAULT THANKS CARD
+======================
+*/
+
+.thanks-rating{
+    color: var(--Orange);
+}
+
+.thanks-title{
+    color: var(--White);
+}
+
+.thanks-paragraph{
+    color: var(--LightGrey);
+}
+
+
+/*
+===============
+DESKTOP VERSION
+===============
+*/
+
+
+/*
+=========================
+RATING CARD
+=========================
+*/
+
+.main{
+    background-color: var(--DarkBlue);
+    border-radius: 1.5rem;
+    width: 22rem;
+    height: auto;
+    padding-left: .5rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+}
+
+.main-container{
+    padding: 1.2rem;
+}
+
+/*
+====================
+THANKS CARD
+====================
+*/
+
+.section-thanks{
+    background-color: var(--DarkBlue);
+    border-radius: 1.5rem;
+    width: 20rem;
+    height: auto;
+    padding: 2rem;
+    margin-top: 6rem;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+}
